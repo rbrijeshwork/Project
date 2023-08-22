@@ -1,0 +1,36 @@
+SELECT students.id, attendance_record.id
+FROM students
+FULL JOIN attendance_record
+ON students.id = attendance_record.id;
+
+
+SELECT  id, id_no, class_id, name
+   FROM students
+   FULL JOIN ORDERS
+   ON students.id = attendance_record.id;
+
+
+SELECT * FROM Students FULL JOIN attendance_record m ON s.id=m.id;
+
+SELECT  s.id, s.id_no, s.class_id, s.name
+   FROM students s
+   INNER JOIN attendance_record a
+   ON s.id = a.id;
+   
+SELECT * FROM Students  
+INNER JOIN  
+attendance_record  
+ON  
+student.id = attendance_record.id;
+
+
+RUN
+
+SELECT * FROM Students INNER JOIN attendance_record ON Students.id = attendance_record.id
+   
+SELECT Students.id  FROM Students 
+   INNER JOIN attendance_record
+     ON attendance_record.id = Students.id
+ WHERE attendance_record.date_created = ''$start_date''
+   AND date_created = ''$start_date'
+   
